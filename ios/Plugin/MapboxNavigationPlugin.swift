@@ -5,4 +5,11 @@ import Foundation
         print(value)
         return value
     }
+
+
+    @objc public func navigateToDestination(_ latitude: Double, longitude: Double, userId: String){
+      print("Latitude: ", latitude);
+      print("Longitude: ", longitude);
+      print("userId: ", userId);
+    }
 }

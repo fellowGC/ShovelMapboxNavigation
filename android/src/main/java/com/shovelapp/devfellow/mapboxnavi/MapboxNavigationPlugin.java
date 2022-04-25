@@ -8,4 +8,11 @@ public class MapboxNavigationPlugin {
         Log.i("Echo", value);
         return value;
     }
+
+
+    public void navigateToDestination(double latitude, double longitude, String userId){
+      Log.i("Latitude: ", latitude);
+      Log.i("Longitude: ", longitude);
+      Log.i("userId: ", userId);
+    }
 }

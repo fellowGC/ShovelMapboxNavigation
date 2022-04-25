@@ -5,6 +5,7 @@ def capacitor_pods
   use_frameworks!
   pod 'Capacitor', :path => '../node_modules/@capacitor/ios'
   pod 'CapacitorCordova', :path => '../node_modules/@capacitor/ios'
+  pod 'MapboxNavigation', '~> 2.4'
 end
 
 target 'Plugin' do
@@ -12,5 +13,10 @@ target 'Plugin' do
 end
 
 target 'PluginTests' do
+  capacitor_pods
+end
+
+
+target 'App' do
   capacitor_pods
 end

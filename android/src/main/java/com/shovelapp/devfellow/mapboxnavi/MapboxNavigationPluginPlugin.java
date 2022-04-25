@@ -19,4 +19,15 @@ public class MapboxNavigationPluginPlugin extends Plugin {
         ret.put("value", implementation.echo(value));
         call.resolve(ret);
     }
+
+
+    @PluginMethod void navigateToDestination(PluginCall call){
+      String userId = call.getString("userId");
+      double latitude = call.getDouble("latitude");
+      double longitude = call.getDouble("longitude");
+
+      implementation.navigateToDestination(latitude, longitude, userId);
+
+      call.resolve();
+    }
 }
